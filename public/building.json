@@ -1,0 +1,25 @@
+{
+  "building": "Northstar Learning Center",
+  "nodes": [
+    { "id": "R1", "label": "Room 1", "type": "room", "x": 100, "y": 170 },
+    { "id": "R2", "label": "Room 2", "type": "room", "x": 100, "y": 370 },
+    { "id": "C1", "label": "Central Hall", "type": "junction", "x": 300, "y": 170 },
+    { "id": "C2", "label": "East Junction", "type": "junction", "x": 520, "y": 170 },
+    { "id": "C3", "label": "South Hall", "type": "junction", "x": 300, "y": 370 },
+    { "id": "C4", "label": "South Exit Hall", "type": "junction", "x": 520, "y": 370 },
+    { "id": "E1", "label": "North Exit", "type": "exit", "x": 740, "y": 170 },
+    { "id": "E2", "label": "South Exit", "type": "exit", "x": 740, "y": 370 }
+  ],
+  "edges": [
+    { "id": "edge-r1-c1", "from": "R1", "to": "C1", "cost": 2 },
+    { "id": "edge-c1-c2", "from": "C1", "to": "C2", "cost": 2 },
+    { "id": "edge-c2-e1", "from": "C2", "to": "E1", "cost": 3 },
+    { "id": "edge-r1-c3", "from": "R1", "to": "C3", "cost": 4 },
+    { "id": "edge-c3-c4", "from": "C3", "to": "C4", "cost": 3 },
+    { "id": "edge-c4-e2", "from": "C4", "to": "E2", "cost": 4 },
+    { "id": "edge-r2-c3", "from": "R2", "to": "C3", "cost": 2 },
+    { "id": "edge-c1-c3", "from": "C1", "to": "C3", "cost": 5 },
+    { "id": "edge-c2-c4", "from": "C2", "to": "C4", "cost": 5 }
+  ],
+  "initial_state": { "blocked_nodes": [], "blocked_edges": [], "closed_exits": [] }
+}
